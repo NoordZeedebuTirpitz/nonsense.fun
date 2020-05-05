@@ -22,22 +22,22 @@
 
 <body>
     <header id="header">
-        <h1>b言b语</h1>
+        <h1>阴阳酱的记事簿(　^ω^)</h1>
     </header>
     <main id="app">
         <aside>
             <p id="describe">
-                可以在这里简单介绍你自己
+                S1反串跑得快。NGA稳坐钓鱼台
             </p>
         </aside>
-        <p class="tip">现在总共 b 了 {{count}} 条</p>
+        <p class="tip">现在总共阴阳怪气了 {{count}} 条</p>
         <section class="item" v-for="item in contents" v-cloak>
             <p v-html='item.attributes.content'></p>
             <time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time>
         </section>
         <div class="load-ctn">
-            <button class="load-btn" v-on:click="loadMore" v-if="contents" v-cloak>再翻翻</button>
-            <p class="tip" v-else>别急，加载呢</p>
+            <button class="load-btn" v-on:click="loadMore" v-if="contents" v-cloak>放长线，钓大鱼| ω・´)</button>
+            <p class="tip" v-else>哈哈，上钩辣(`ヮ´ )</p>
         </div>
     </main>
     <footer>
@@ -51,8 +51,8 @@
         Query
     } = AV;
     AV.init({
-        appId: "aaa", //你的 leancloud 应用 id （设置-应用keys-AppID）
-        appKey: "aaa", //你的 leancloud 应用 AppKey （设置-应用keys-AppKey）
+        appId: "o4VxfnAl1NVTxkAqrS0fScJh-MdYXbMMI", //你的 leancloud 应用 id （设置-应用keys-AppID）
+        appKey: "zU76BsdSmspDdNz0YN7D1sKg", //你的 leancloud 应用 AppKey （设置-应用keys-AppKey）
         serverURLs: '国际版可删除该行，否则必须在后台绑定域名并填写在此'
     });
 
